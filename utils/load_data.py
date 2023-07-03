@@ -77,25 +77,3 @@ class DataGenerator:
         
         self._curr_idx = 0
         raise StopIteration
-
-
-                    
-
-
-
-
-
-# class UniversityClassIter:    
-# def __init__(self, university_class):
-#         self._lect = university_class.lecturers
-#         self._stud = university_class.students
-#         self._class_size = len(self._lect) + len(self._stud)
-#         self._current_index = 0    def __iter__(self):
-#         return self    def __next__(self):
-#         if self._current_index < self._class_size:
-#             if self._current_index < len(self._lect):
-#                 member = self._lect[self._current_index] 
-#             else:
-#                 member = self._stud[
-#                     self._current_index - len(self._lect)]            self._current_index += 1
-#             return member        raise StopIteration
